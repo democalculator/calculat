@@ -1,0 +1,26 @@
+def add_numbers(num1, num2):
+    return num1 + num2
+
+def subtract_numbers(num1, num2):
+    return num1 - num2
+
+def main():
+    print("Simple Calculator (Addition and Subtraction)")
+    
+    # Get input from the user
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+    operation = input("Enter '+' for addition or '-' for subtraction: ")
+    
+    # Perform the chosen operation
+    if operation == '+':
+        result = add_numbers(number1, number2)
+        print(f"The result of {number1} + {number2} is: {result}")
+    elif operation == '-':
+        result = subtract_numbers(number1, number2)
+        print(f"The result of {number1} - {number2} is: {result}")
+    else:
+        print("Invalid operation. Please enter '+' or '-'.")
+
+if __name__ == "__main__":
+    main()
